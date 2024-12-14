@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotación Temporal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    input[type="checkbox"] {
+      margin-left: 10px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rotación Temporal - Auxiliares de Embolse  6AM -  2PM</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Grupo</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+        <th>Sábado</th>
+        <th>Domingo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>LPL01</td>
+        <td>Eligio <input type="checkbox"><br>Edward <input type="checkbox"><br>Wilson <input type="checkbox"></td>
+        <td>Albert <input type="checkbox"><br>Ramón <input type="checkbox"><br>Luis Alberto <input type="checkbox"></td>
+        <td>Edwin <input type="checkbox"><br>Willy <input type="checkbox"><br>Ayendy <input type="checkbox"></td>
+        <td>Albert <input type="checkbox"><br>Tony <input type="checkbox"><br>Wilson <input type="checkbox"></td>
+        <td>Ramón <input type="checkbox"><br>Jesús <input type="checkbox"><br>RONNY <input type="checkbox"></td>
+        <td>Luis <input type="checkbox"><br>Ignacio <input type="checkbox"><br>Edwin <input type="checkbox"></td>
+        <td>Manuel <input type="checkbox"><br>Edward <input type="checkbox"><br>Jesús <input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>LPL02</td>
+        <td>Luis Alberto <input type="checkbox"><br>Ignacio <input type="checkbox"><br>Manuel <input type="checkbox"></td>
+        <td>LUIS <input type="checkbox"><br>ELIGIO <input type="checkbox"><br>WILLY <input type="checkbox"></td>
+        <td>WILSON <input type="checkbox"><br>IGNACIO <input type="checkbox"><br>JESUS <input type="checkbox"></td>
+        <td>Ramón <input type="checkbox"><br>Ronny <input type="checkbox"><br>Francis <input type="checkbox"></td>
+        <td>EDWARD <input type="checkbox"><br>AYENDY <input type="checkbox"><br>OMAR<input type="checkbox"></td>
+        <td>MANUEL <input type="checkbox"><br>ELIGIO <input type="checkbox"><br>TONY <input type="checkbox"></td>
+        <td>Albert <input type="checkbox"><br>EDWIN <input type="checkbox"><br>RAMON <input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>LPC01</td>
+        <td>Jesús <input type="checkbox"><br>Ramón <input type="checkbox"></td>
+        <td>WILSON <input type="checkbox"><br>RONNY <input type="checkbox"></td>
+        <td>ALBERT <input type="checkbox"><br>LUIS <input type="checkbox"></td>
+        <td>AYENDY <input type="checkbox"><br>MANUEL <input type="checkbox"></td>
+        <td>ELIGIO <input type="checkbox"><br>LUIS ALBERTO <input type="checkbox"></td>
+        <td>WILSON<input type="checkbox"><br>RAMON<input type="checkbox"></td>
+        <td>WILLY <input type="checkbox"><br>FRANCIS <input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>LPC02</td>
+        <td>LUIS<input type="checkbox"><br>RONNY<input type="checkbox"></td>
+        <td>TONY <input type="checkbox"><br>EDWIN<input type="checkbox"></td>
+        <td>RAMON <input type="checkbox"><br>EDWARD <input type="checkbox"></td>
+        <td>ELIGIO<input type="checkbox"><br>IGNACIO<input type="checkbox"></td>
+        <td>FRANCIS<input type="checkbox"><br>MANUEL<input type="checkbox"></td>
+        <td>WILLY <input type="checkbox"><br>LUIS ALBERTO<input type="checkbox"></td>
+        <td>IGNACIO<input type="checkbox"><br>AYENDY<input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>LFI01</td>
+        <td>OMAR<input type="checkbox"><br>TONY <input type="checkbox"></td>
+        <td>MANUEL<input type="checkbox"><br>AYENDY<input type="checkbox"></td>
+        <td>LUIS ALBERTO<input type="checkbox"><br>FRANCIS<input type="checkbox"></td>
+        <td>OMAR<input type="checkbox"><br>WILLY<input type="checkbox"></td>
+        <td>TONY<input type="checkbox"><br>IGNACIO<input type="checkbox"></td>
+        <td>EDWARD<input type="checkbox"><br>RONNY<input type="checkbox"></td>
+        <td>ELIGIO<input type="checkbox"><br>WILSON<input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>LFI02</td>
+        <td>ALBERT<input type="checkbox"><br>FRANCIS <input type="checkbox"><br>EDWIN<input type="checkbox"><br>AYENDY <input type="checkbox"></td>
+        <td>IGNACIO<input type="checkbox"><br>JESUS<input type="checkbox"><br>OMAR<input type="checkbox"><br>EDWARD<input type="checkbox"></td>
+        <td>ELIGIO<input type="checkbox"><br>TONY<input type="checkbox"><br>MANUEL<input type="checkbox"><br>RONNY<input type="checkbox"></td>
+        <td>LUIS ALBERTO<input type="checkbox"><br>LUIS<input type="checkbox"><br>EDWARD<input type="checkbox"><br>JESUS<input type="checkbox"></td>
+        <td>EDWIN <input type="checkbox"><br>WILSON<input type="checkbox"><br>ALBER<input type="checkbox"><br>WILLY <input type="checkbox"></td>
+        <td>OMAR <input type="checkbox"><br>JESUS <input type="checkbox"><br>FRANCIS<input type="checkbox"><br>AYENDY<input type="checkbox"></td>
+        <td>TONY <input type="checkbox"><br>RONNY<input type="checkbox"><br>LUIS<input type="checkbox"><br>LUIS ALBERTO<input type="checkbox"></td>
+        
+      </tr>
+      <tr>
+        <td>CUARTO DE TRITURAC</td>
+        <td>JOSE<input type="checkbox"><br>ENMANUEL<input type="checkbox"></td>
+        <td>JOSE<input type="checkbox"><br>ENMANUEL<input type="checkbox"></td>
+        <td>JOSE<input type="checkbox"><br>ENMANUEL<input type="checkbox"></td>
+        <td>JOSE<input type="checkbox"><br>ENMANUEL<input type="checkbox"></td>
+        <td>JOSE<input type="checkbox"><br>ENMANUEL<input type="checkbox"></td>
+        <td>JOSE<input type="checkbox"><br>ENMANUEL<input type="checkbox"></td>
+        <td>JOSE<input type="checkbox"><br>ENMANUEL<input type="checkbox"></td>
+        
+      </tr>
+      <tr>
+    </tbody>
+  </table>
+  <div style="text-align: center;">
+    <button onclick="guardarDatos()">Guardar Datos</button>
+    <button onclick="borrarDatos()">Borrar Datos</button>
+  </div>
+
+  <script>
+    function guardarDatos() {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      const data = [];
+      checkboxes.forEach((checkbox, index) => {
+        data.push({ id: index, checked: checkbox.checked });
+      });
+      localStorage.setItem('rotacionDatos', JSON.stringify(data));
+      alert('Datos guardados con éxito.');
+    }
+
+    function cargarDatos() {
+      const savedData = JSON.parse(localStorage.getItem('rotacionDatos')) || [];
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      savedData.forEach(item => {
+        if (checkboxes[item.id]) {
+          checkboxes[item.id].checked = item.checked;
+        }
+      });
+    }
+
+    function borrarDatos() {
+      localStorage.removeItem('rotacionDatos');
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(checkbox => checkbox.checked = false);
+      alert('Datos borrados con éxito.');
+    }
+
+    // Cargar los datos al iniciar
+    window.onload = cargarDatos;
+  </script>
+</body>
+</html>
